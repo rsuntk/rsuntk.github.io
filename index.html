@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RissuDesu</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300..700&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&family=Spline+Sans:wght@300..700&display=swap');
+            * {
+                margin: 0;
+                padding: 0;
+                color: #f0f0f0;
+                user-select: none;
+                -moz-user-select: none;
+                -webkit-user-select: none;
+                -ms-user-select: none;
+                -o-user-select: none;
+            }
+            *::after, *::before, html {
+                box-sizing: border-box;
+            }
+            body {
+                background-color: #0D0D0D;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                padding: 24px;
+                justify-content: center;
+                height: 100vh;
+            }
+            .spline-sans-h1 {
+                font-family: "Spline Sans", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 600;
+                font-style: normal;
+            }
+            .spline-sans-h3 {
+                font-family: "Spline Sans Mono", monospace;
+                font-optical-sizing: auto;
+                font-weight: 600;
+                font-style: normal;
+            }
+            .spline-sans-p {
+                font-family: "Spline Sans Mono", monospace;
+                font-optical-sizing: auto;
+                font-weight: 400;
+                font-style: normal;
+            }
+            .headline {
+                font-size: 90px;
+            }
+            .text-box {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 7px 18px;
+            }
+            .outer-box {
+                background: #131313;
+                border-radius: 20px;
+                border: #2d2d2d 1px solid;
+            }
+            .about-header {
+                padding: 13px 25px 0 25px;
+            }
+            .about-content {
+                padding: 13px 25px;
+            }
+            .about-header {
+                display: flex;
+                align-items: center;
+            }
+            .svgIco {
+                fill: currentColor;
+            }
+            .aboutico {
+                margin: 0 5px 0 0;
+            }
+            line {
+                height: 1px;
+                background-color: #2d2d2d;
+                width: 100%;
+                display: block;
+                margin: 4px 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="outer-box" style="position: relative;">
+            <div class="text-box">
+                <h1 class="spline-sans-h1 headline" style="position: absolute;top: -70px;">Rissu</h1>
+            </div>
+            <line></line>
+            <div class="about-box">
+                <div class="about-header">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="svgIco aboutico" height="20" viewBox="0 -960 960 960" width="20"><path d="M440.413-284.413h79.174V-528h-79.174v243.587Zm39.376-310.804q17.244 0 29.119-11.665 11.875-11.664 11.875-28.907 0-17.244-11.665-29.119-11.664-11.875-28.907-11.875-17.244 0-29.119 11.665-11.875 11.664-11.875 28.907 0 17.244 11.665 29.119 11.664 11.875 28.907 11.875Zm.487 507.348q-81.189 0-152.621-30.618-71.432-30.618-124.991-84.177-53.559-53.559-84.177-124.949-30.618-71.391-30.618-152.845 0-81.455 30.618-152.387t84.177-124.491q53.559-53.559 124.949-84.177 71.391-30.618 152.845-30.618 81.455 0 152.387 30.618t124.491 84.177q53.559 53.559 84.177 124.716 30.618 71.156 30.618 152.344 0 81.189-30.618 152.621-30.618 71.432-84.177 124.991-53.559 53.559-124.716 84.177-71.156 30.618-152.344 30.618Z"></path></svg>
+                    <h3 class="spline-sans-h3">About</h3>
+                </div>
+                <div class="about-content">
+                    <p class="spline-sans-p">a 15 years old from <a href="https://en.wikipedia.org/wiki/Indonesia"><span style="color: red;">Indo</span><span style="color: #fff;">nesia</span></a>, have a dream to became a great developer.</p>
+                </div>
+            </div>
+            <line></line>
+            <div class="about-box">
+                <div class="about-header">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="svgIco aboutico" height="20" viewBox="0 -960 960 960" width="20"><path d="m480-275.913-164.717 98.478q-12.674 6.957-24.848 5.837-12.174-1.119-21.37-8.076-9.196-6.956-13.793-19.011-4.598-12.054-1.12-24.728l43.239-183.717-145.717-123.718q-10.435-9.195-12.794-21.25-2.359-12.054.881-23.489 3.239-11.435 12.793-19.131 9.555-7.695 23.228-8.695l190.718-17 75.478-174.957q5.718-12.913 16.033-19.13 10.315-6.218 21.989-6.218 11.674 0 21.989 6.218 10.315 6.217 16.033 19.13L593.5-619.413l190.718 16q13.673 1 23.228 9.195 9.554 8.196 12.793 19.631 3.24 11.435.381 22.989-2.859 11.555-13.294 20.75L662.609-407.13l43.239 183.717q3.478 12.674-1.12 24.728-4.597 12.055-13.793 19.011-9.196 6.957-21.37 8.076-12.174 1.12-24.848-5.837L480-275.913Z"></path></svg>
+                    <h3 class="spline-sans-h3">Favorite</h3>
+                </div>
+                <div class="about-content">
+                    <p class="spline-sans-p">- Programming language: C, Bash, HTML, CSS</p>
+                    <p class="spline-sans-p">- Foods: Rendang, Fryed Tempeh, Shrimp</p>
+                </div>
+            </div>
+            <line></line>
+            <div class="about-box">
+                <div class="about-header">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="svgIco aboutico" height="20" viewBox="0 -960 960 960" width="20"><path d="M141.37-183.869q-22.392 0-37.946-15.913-15.555-15.914-15.555-38.305 0-21.913 15.435-37.348 15.435-15.435 37.348-15.435h43.217v-402.26q0-34.483 24.259-58.742t58.742-24.259h515.76q17.453 0 29.477 11.964 12.024 11.963 12.024 29.326t-12.024 29.537q-12.024 12.174-29.477 12.174H266.87v402.26h156.76q22.392 0 37.946 15.555 15.554 15.554 15.554 37.945 0 22.392-15.554 37.946-15.554 15.555-37.946 15.555H141.37Zm473.543 0q-17.435 0-29.609-12.017-12.174-12.016-12.174-29.457v-353.998q0-17.441 12.013-29.615 12.012-12.174 29.447-12.174h215.758q17.435 0 29.609 12.016 12.174 12.016 12.174 29.458v353.998q0 17.441-12.013 29.615-12.012 12.174-29.447 12.174H614.913Z"/></svg>
+                    <h3 class="spline-sans-h3">Devices</h3>
+                </div>
+                <div class="about-content">
+                    <p class="spline-sans-p">- Primary: Samsung Galaxy A10s</p>
+                    <p class="spline-sans-p">- Secondary: Lenovo Thinkpad L421</p>
+                    <p class="spline-sans-p">- Tertiary: Samsung Galaxy M10</p>
+                </div>
+            </div>
+            <line></line>
+            <div class="about-box">
+                <div class="about-header">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="svgIco aboutico" height="20" viewBox="0 -960 960 960" width="20"><path d="M480-484.065q-63.587 0-107.859-44.272-44.272-44.272-44.272-107.859 0-63.587 44.272-107.739T480-788.087q63.587 0 107.859 44.152 44.272 44.152 44.272 107.739t-44.272 107.859Q543.587-484.065 480-484.065ZM183.869-262.804v-21.609q0-25.152 13.696-47.565 13.696-22.413 37.848-37.37 55.717-32.239 118.174-49.478Q416.043-436.065 480-436.065q64.435 0 126.891 17.119 62.457 17.12 117.696 49.359 24.152 13.957 37.848 36.75 13.696 22.794 13.696 48.424v21.609q0 34.782-24.109 58.891t-58.892 24.109H266.87q-34.783 0-58.892-24.109t-24.109-58.891Z"/></svg>
+                    <h3 class="spline-sans-h3">Socials</h3>
+                </div>
+                <div class="about-content">
+                    <p class="spline-sans-p">- Github: <a href="https://github.com/rsuntk">@github/rsuntk</a></p>
+                    <p class="spline-sans-p">- Gitlab: <a href="https://gitlab.com/rsuntk">@gitlab/rsuntk</a></p>
+                    <p class="spline-sans-p">- Telegram: <a href="https://t.me/RissuDesu">@telegram/RissuDesu</a></p>
+                </div>
+            </div>
+        </div>
+    
+</body></html>
