@@ -1,12 +1,17 @@
+<!--
+    Rissu Projects (C) 2024
+    rsuntk.github.io index.html
+-->
 <!DOCTYPE html>
-<html lang="en"><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>RissuDesu</title>
+        <link rel="icon" href="./assets/moi3.jpeg">
         <style>
-            @import url('https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300..700&display=swap');
-            @import url('https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&family=Spline+Sans:wght@300..700&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
             * {
                 margin: 0;
                 padding: 0;
@@ -21,28 +26,32 @@
                 box-sizing: border-box;
             }
             body {
-                background-color: #0D0D0D;
+                background: url("./assets/moi.jpg");
+                background-repeat: no-repeat;
+                backdrop-filter: brightness(70%);
+                background-size: cover;
+                background-attachment: fixed;
+                background-position: center;
                 display: flex;
                 align-items: center;
                 flex-direction: column;
                 padding: 24px;
                 justify-content: center;
-                height: 100vh;
             }
-            .spline-sans-h1 {
-                font-family: "Spline Sans", sans-serif;
+            .ubuntu-h1 {
+                font-family: "Ubuntu", sans-serif;
                 font-optical-sizing: auto;
                 font-weight: 600;
                 font-style: normal;
             }
-            .spline-sans-h3 {
-                font-family: "Spline Sans Mono", monospace;
+            .ubuntu-h3 {
+                font-family: "Ubuntu", sans-serif;
                 font-optical-sizing: auto;
                 font-weight: 600;
                 font-style: normal;
             }
-            .spline-sans-p {
-                font-family: "Spline Sans Mono", monospace;
+            .ubuntu-p {
+                font-family: "Ubuntu", sans-serif;
                 font-optical-sizing: auto;
                 font-weight: 400;
                 font-style: normal;
@@ -58,8 +67,10 @@
             }
             .outer-box {
                 background: #131313;
-                border-radius: 20px;
+                border-radius: 13px;
+                box-shadow: #131313 0px 0px 20px 0px;
                 border: #2d2d2d 1px solid;
+                padding: 28px;
             }
             .about-header {
                 padding: 13px 25px 0 25px;
@@ -77,65 +88,205 @@
             .aboutico {
                 margin: 0 5px 0 0;
             }
-            line {
-                height: 1px;
-                background-color: #2d2d2d;
-                width: 100%;
-                display: block;
-                margin: 4px 0;
+            .pfp {
+                background: url("https://github.com/rsuntk.png") no-repeat;
+                background-size: cover;
+                width: 64px;
+                height: 64px;
+                border-radius: 100%;
             }
+            .wrapper-pfp {
+                margin: 0px 0px 0px 8px;
+            }
+            .pfp-header {
+                padding: 14px;
+            }
+
+            .flex { display: flex; }
+            .center-a { align-items: center; }
+            .column { flex-direction: column; }
+
+            .box-clickable {
+                background: rgb(0 0 0 / 40%);
+                padding: 16px;
+                border-radius: 10px;
+                margin: 10px 0;
+            }
+            .label-icon-cnt {
+                margin-left: 16px;
+            }
+            .icon-cnt {
+                flex: auto;
+                justify-content: space-between;
+            }
+            .no-achor-style { text-decoration: none;cursor: pointer; }
+            .moi { background: url("./assets/moi3.jpeg");background-size: cover;width: 36px;height: 36px;display: block; }
         </style>
     </head>
     <body>
-        <div class="outer-box" style="position: relative;">
-            <div class="text-box">
-                <h1 class="spline-sans-h1 headline" style="position: absolute;top: -70px;">Rissu</h1>
+        <div class="outer-box">
+            <div class="about-box">
+                <div class="about-header pfp-header">
+                    <div class="pfp"></div>
+                    <div class="wrapper-pfp">
+                        <h3 class="ubuntu-h3">It's Rissu YAA!!</h3>
+                        <p class="ubuntu-p">@RissuDesu</p>
+                    </div>
+                </div>
             </div>
-            <line></line>
+            
             <div class="about-box">
                 <div class="about-header">
                     <svg xmlns="http://www.w3.org/2000/svg" class="svgIco aboutico" height="20" viewBox="0 -960 960 960" width="20"><path d="M440.413-284.413h79.174V-528h-79.174v243.587Zm39.376-310.804q17.244 0 29.119-11.665 11.875-11.664 11.875-28.907 0-17.244-11.665-29.119-11.664-11.875-28.907-11.875-17.244 0-29.119 11.665-11.875 11.664-11.875 28.907 0 17.244 11.665 29.119 11.664 11.875 28.907 11.875Zm.487 507.348q-81.189 0-152.621-30.618-71.432-30.618-124.991-84.177-53.559-53.559-84.177-124.949-30.618-71.391-30.618-152.845 0-81.455 30.618-152.387t84.177-124.491q53.559-53.559 124.949-84.177 71.391-30.618 152.845-30.618 81.455 0 152.387 30.618t124.491 84.177q53.559 53.559 84.177 124.716 30.618 71.156 30.618 152.344 0 81.189-30.618 152.621-30.618 71.432-84.177 124.991-53.559 53.559-124.716 84.177-71.156 30.618-152.344 30.618Z"></path></svg>
-                    <h3 class="spline-sans-h3">About</h3>
+                    <h3 class="ubuntu-h3">About</h3>
                 </div>
                 <div class="about-content">
-                    <p class="spline-sans-p">a 15 years old from <a href="https://en.wikipedia.org/wiki/Indonesia"><span style="color: red;">Indo</span><span style="color: #fff;">nesia</span></a>, have a dream to became a great developer.</p>
+                    <p class="ubuntu-p">
+                        Hello! I am Faris, but also known as Rissu. My age is 15 years old,
+                    </p>
+                    <p class="ubuntu-p">
+                        but i love developing things like website and android kernels.
+                    </p>
+                    <p class="ubuntu-p center-a flex" style="margin-top: 7px;">
+                        Also, moi<span class="moi"></span> lover
+                    </p>
                 </div>
             </div>
-            <line></line>
+            
             <div class="about-box">
                 <div class="about-header">
                     <svg xmlns="http://www.w3.org/2000/svg" class="svgIco aboutico" height="20" viewBox="0 -960 960 960" width="20"><path d="m480-275.913-164.717 98.478q-12.674 6.957-24.848 5.837-12.174-1.119-21.37-8.076-9.196-6.956-13.793-19.011-4.598-12.054-1.12-24.728l43.239-183.717-145.717-123.718q-10.435-9.195-12.794-21.25-2.359-12.054.881-23.489 3.239-11.435 12.793-19.131 9.555-7.695 23.228-8.695l190.718-17 75.478-174.957q5.718-12.913 16.033-19.13 10.315-6.218 21.989-6.218 11.674 0 21.989 6.218 10.315 6.217 16.033 19.13L593.5-619.413l190.718 16q13.673 1 23.228 9.195 9.554 8.196 12.793 19.631 3.24 11.435.381 22.989-2.859 11.555-13.294 20.75L662.609-407.13l43.239 183.717q3.478 12.674-1.12 24.728-4.597 12.055-13.793 19.011-9.196 6.957-21.37 8.076-12.174 1.12-24.848-5.837L480-275.913Z"></path></svg>
-                    <h3 class="spline-sans-h3">Favorite</h3>
+                    <h3 class="ubuntu-h3">Favorite</h3>
                 </div>
                 <div class="about-content">
-                    <p class="spline-sans-p">- Programming language: C, Bash, HTML, CSS</p>
-                    <p class="spline-sans-p">- Foods: Rendang, Fried Tempeh, Shrimp</p>
+                    <p class="ubuntu-p">- Programming language: C, Bash, HTML, CSS</p>
+                    <p class="ubuntu-p">- Foods: Rendang, Fried Tempeh, Shrimp</p>
                 </div>
             </div>
-            <line></line>
+            
             <div class="about-box">
                 <div class="about-header">
                     <svg xmlns="http://www.w3.org/2000/svg" class="svgIco aboutico" height="20" viewBox="0 -960 960 960" width="20"><path d="M141.37-183.869q-22.392 0-37.946-15.913-15.555-15.914-15.555-38.305 0-21.913 15.435-37.348 15.435-15.435 37.348-15.435h43.217v-402.26q0-34.483 24.259-58.742t58.742-24.259h515.76q17.453 0 29.477 11.964 12.024 11.963 12.024 29.326t-12.024 29.537q-12.024 12.174-29.477 12.174H266.87v402.26h156.76q22.392 0 37.946 15.555 15.554 15.554 15.554 37.945 0 22.392-15.554 37.946-15.554 15.555-37.946 15.555H141.37Zm473.543 0q-17.435 0-29.609-12.017-12.174-12.016-12.174-29.457v-353.998q0-17.441 12.013-29.615 12.012-12.174 29.447-12.174h215.758q17.435 0 29.609 12.016 12.174 12.016 12.174 29.458v353.998q0 17.441-12.013 29.615-12.012 12.174-29.447 12.174H614.913Z"/></svg>
-                    <h3 class="spline-sans-h3">Devices</h3>
+                    <h3 class="ubuntu-h3">Devices</h3>
                 </div>
-                <div class="about-content">
-                    <p class="spline-sans-p">- Primary: Samsung Galaxy A10s</p>
-                    <p class="spline-sans-p">- Secondary: Lenovo Thinkpad L421</p>
-                    <p class="spline-sans-p">- Tertiary: Samsung Galaxy M10</p>
+                <div class="about-content ">
+                    <div class="box-clickable flex">
+                        <div class="icon-cnt flex center-a">
+                            <div class="inner-icon-cnt flex center-a">
+                                <img src="./assets/2.png">
+                                <div class="label-icon-cnt flex column">
+                                    <h3 class="ubuntu-h3">Samsung Galaxy A10s</h3>
+                                    <p class="ubuntu-p">SM-A107F</p>
+                                    <p class="ubuntu-p" style="color: #646464">Seraphinedx</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-clickable flex">
+                        <div class="icon-cnt flex center-a">
+                            <div class="inner-icon-cnt flex center-a">
+                                <img src="./assets/3.png">
+                                <div class="label-icon-cnt flex column">
+                                    <h3 class="ubuntu-h3">Samsung Galaxy M10</h3>
+                                    <p class="ubuntu-p">SM-M105G</p>
+                                    <p class="ubuntu-p" style="color: #646464">m10lte</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-clickable flex">
+                        <div class="icon-cnt flex center-a">
+                            <div class="inner-icon-cnt flex center-a">
+                                <img src="./assets/4.png">
+                                <div class="label-icon-cnt flex column">
+                                    <h3 class="ubuntu-h3">Lenovo Thinkpad L421</h3>
+                                    <p class="ubuntu-p">L421</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <line></line>
+            
             <div class="about-box">
                 <div class="about-header">
                     <svg xmlns="http://www.w3.org/2000/svg" class="svgIco aboutico" height="20" viewBox="0 -960 960 960" width="20"><path d="M480-484.065q-63.587 0-107.859-44.272-44.272-44.272-44.272-107.859 0-63.587 44.272-107.739T480-788.087q63.587 0 107.859 44.152 44.272 44.152 44.272 107.739t-44.272 107.859Q543.587-484.065 480-484.065ZM183.869-262.804v-21.609q0-25.152 13.696-47.565 13.696-22.413 37.848-37.37 55.717-32.239 118.174-49.478Q416.043-436.065 480-436.065q64.435 0 126.891 17.119 62.457 17.12 117.696 49.359 24.152 13.957 37.848 36.75 13.696 22.794 13.696 48.424v21.609q0 34.782-24.109 58.891t-58.892 24.109H266.87q-34.783 0-58.892-24.109t-24.109-58.891Z"/></svg>
-                    <h3 class="spline-sans-h3">Socials</h3>
+                    <h3 class="ubuntu-h3">Socials</h3>
                 </div>
-                <div class="about-content">
-                    <p class="spline-sans-p">- Github: <a href="https://github.com/rsuntk">@github/rsuntk</a></p>
-                    <p class="spline-sans-p">- Gitlab: <a href="https://gitlab.com/rsuntk">@gitlab/rsuntk</a></p>
-                    <p class="spline-sans-p">- Telegram: <a href="https://t.me/RissuDesu">@telegram/RissuDesu</a></p>
+                <div class="about-content ">
+                    <a class="box-clickable flex no-achor-style" href="https://github.com/rsuntk">
+                        <div class="icon-cnt flex center-a">
+                            <div class="inner-icon-cnt flex center-a">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="42" height="40" viewBox="0 0 42 40" fill="none">
+                                    <g clip-path="url(#clip0_14_2)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20.9374 0C9.35957 0 0 9.16667 0 20.5071C0 29.5721 5.997 37.2454 14.3164 39.9613C15.3566 40.1654 15.7376 39.52 15.7376 38.9771C15.7376 38.5017 15.7033 36.8721 15.7033 35.1742C9.879 36.3967 8.66614 32.7296 8.66614 32.7296C7.73014 30.3529 6.34329 29.7421 6.34329 29.7421C4.437 28.4858 6.48214 28.4858 6.48214 28.4858C8.59671 28.6217 9.70629 30.5908 9.70629 30.5908C11.5779 33.7142 14.5937 32.8317 15.807 32.2883C15.9801 30.9642 16.5351 30.0475 17.1244 29.5383C12.4791 29.0629 7.59171 27.2975 7.59171 19.4204C7.59171 17.1796 8.42314 15.3463 9.74057 13.9204C9.53271 13.4113 8.80457 11.3058 9.94886 8.48792C9.94886 8.48792 11.7167 7.94458 15.7029 10.5929C17.4095 10.144 19.1695 9.91567 20.9374 9.91375C22.7053 9.91375 24.5074 10.1517 26.1716 10.5929C30.1581 7.94458 31.926 8.48792 31.926 8.48792C33.0703 11.3058 32.3417 13.4113 32.1339 13.9204C33.486 15.3463 34.2831 17.1796 34.2831 19.4204C34.2831 27.2975 29.3957 29.0288 24.7157 29.5383C25.4786 30.1833 26.1369 31.4054 26.1369 33.3408C26.1369 36.0908 26.1026 38.2979 26.1026 38.9767C26.1026 39.52 26.484 40.1654 27.5237 39.9617C35.8431 37.245 41.8401 29.5721 41.8401 20.5071C41.8744 9.16667 32.4806 0 20.9374 0Z" fill="currentColor"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_14_2">
+                                    <rect width="42" height="40" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                                <div class="label-icon-cnt flex column">
+                                    <h3 class="ubuntu-h3">GitHub</h3>
+                                    <p class="ubuntu-p">@rsuntk</p>
+                                </div>
+                            </div>
+                            <div class="external-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/></svg>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="box-clickable flex no-achor-style" href="https://gitlab.com/rsuntk">
+                        <div class="icon-cnt flex center-a">
+                            <div class="inner-icon-cnt flex center-a">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="42" height="41" viewBox="0 0 42 41" fill="none">
+                                    <path d="M40.6501 16.2285L40.5925 16.0793L35.0121 1.32786C34.8985 1.03874 34.6975 0.793474 34.4378 0.627261C34.1779 0.463872 33.8748 0.385179 33.5694 0.401806C33.264 0.418434 32.971 0.529581 32.7299 0.720242C32.4915 0.916376 32.3186 1.18215 32.2346 1.48138L28.4667 13.158H13.2091L9.44112 1.48138C9.3594 1.18052 9.18609 0.913414 8.94585 0.718079C8.70478 0.527418 8.41176 0.416271 8.10635 0.399643C7.80094 0.383016 7.49784 0.461709 7.23798 0.625099C6.97888 0.791983 6.77801 1.03703 6.66372 1.32569L1.07261 16.0706L1.01711 16.2198C0.213778 18.3459 0.11462 20.6788 0.734584 22.8669C1.35455 25.0549 2.66002 26.9796 4.45417 28.3505L4.47339 28.3657L4.52462 28.4024L13.0255 34.8505L17.2311 38.0745L19.7929 40.0336C20.0925 40.2641 20.4584 40.3888 20.8347 40.3888C21.2109 40.3888 21.5768 40.2641 21.8765 40.0336L24.4383 38.0745L28.6439 34.8505L37.196 28.3635L37.2173 28.3462C39.0075 26.975 40.3099 25.0524 40.9289 22.8672C41.5479 20.6821 41.4501 18.3525 40.6501 16.2285Z" fill="#E24329"/>
+                                    <path d="M40.6501 16.2285L40.5924 16.0793C37.8733 16.6446 35.311 17.8112 33.0885 19.4958L20.8325 28.8825C25.0061 32.0806 28.6395 34.8592 28.6395 34.8592L37.1916 28.3722L37.213 28.3549C39.0057 26.9837 40.3101 25.0598 40.93 22.8728C41.5499 20.6858 41.4516 18.354 40.6501 16.2285Z" fill="#FC6D26"/>
+                                    <path d="M13.0255 34.8591L17.2311 38.0832L19.7928 40.0422C20.0925 40.2727 20.4584 40.3975 20.8346 40.3975C21.2109 40.3975 21.5768 40.2727 21.8764 40.0422L24.4382 38.0832L28.6438 34.8591C28.6438 34.8591 25.0061 32.0719 20.8325 28.8824C16.6589 32.0719 13.0255 34.8591 13.0255 34.8591Z" fill="#FCA326"/>
+                                    <path d="M8.57438 19.4958C6.35373 17.8078 3.79196 16.6381 1.07261 16.0706L1.01711 16.2198C0.213778 18.3459 0.11462 20.6788 0.734584 22.8669C1.35455 25.055 2.66002 26.9796 4.45417 28.3505L4.47339 28.3657L4.52462 28.4024L13.0255 34.8505C13.0255 34.8505 16.6547 32.0719 20.8325 28.8738L8.57438 19.4958Z" fill="#FC6D26"/>
+                                </svg>
+                                <div class="label-icon-cnt flex column">
+                                    <h3 class="ubuntu-h3">GitLab</h3>
+                                    <p class="ubuntu-p">@rsuntk</p>
+                                </div>
+                            </div>
+                            <div class="external-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/></svg>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="box-clickable flex no-achor-style" href="https://t.me/RissuDesu">
+                        <div class="icon-cnt flex center-a">
+                            <div class="inner-icon-cnt flex center-a">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="41" height="40" viewBox="0 0 41 40" fill="none">
+                                    <g clip-path="url(#clip0_21_13)">
+                                    <path d="M20.5085 40.0167C31.8351 40.0167 41.0171 31.0586 41.0171 20.0083C41.0171 8.95803 31.8351 0 20.5085 0C9.18198 0 0 8.95803 0 20.0083C0 31.0586 9.18198 40.0167 20.5085 40.0167Z" fill="url(#paint0_linear_21_13)"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.27239 19.7918C15.2491 17.2595 19.2278 15.5768 21.2257 14.7605C26.9121 12.4448 28.1075 12.045 28.8759 12.0283C29.0467 12.0283 29.4223 12.0616 29.6785 12.2616C29.8834 12.4282 29.9346 12.6447 29.9688 12.8113C30.0029 12.9779 30.0371 13.3278 30.0029 13.5943C29.6955 16.7597 28.3636 24.4398 27.6806 27.9717C27.3903 29.4711 26.8267 29.9708 26.2803 30.0208C25.085 30.1208 24.1799 29.2545 23.0358 28.5214C21.2257 27.3719 20.2182 26.6556 18.4594 25.5227C16.4273 24.2232 17.7422 23.5069 18.9034 22.3407C19.2108 22.0408 24.4532 17.3761 24.5556 16.9596C24.5727 16.9096 24.5727 16.7097 24.4532 16.6097C24.3336 16.5098 24.1629 16.5431 24.0262 16.5764C23.8384 16.6097 20.9696 18.4756 15.3857 22.1574C14.566 22.7072 13.8317 22.9738 13.1658 22.9571C12.4315 22.9404 11.0312 22.5573 9.97252 22.2241C8.6918 21.8242 7.66723 21.6077 7.75261 20.908C7.80384 20.5414 8.31613 20.1749 9.27239 19.7918Z" fill="white"/>
+                                    </g>
+                                    <defs>
+                                    <linearGradient id="paint0_linear_21_13" x1="20.4915" y1="0" x2="20.4915" y2="39.7001" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#2AABEE"/>
+                                    <stop offset="1" stop-color="#229ED9"/>
+                                    </linearGradient>
+                                    <clipPath id="clip0_21_13">
+                                    <rect width="41" height="40" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                                <div class="label-icon-cnt flex column">
+                                    <h3 class="ubuntu-h3">Telegram</h3>
+                                    <p class="ubuntu-p">@RissuDesu</p>
+                                </div>
+                            </div>
+                            <div class="external-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"/></svg>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
+            <p class="ubuntu-p" style="text-align: center;">Created by RissuDesu with ❤️</p>
         </div>
-    
-</body></html>
+    </body>
+</html>
