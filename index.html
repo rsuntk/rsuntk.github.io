@@ -12,6 +12,7 @@
         <link rel="icon" href="./assets/moi3.jpeg">
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
             * {
                 margin: 0;
                 padding: 0;
@@ -56,6 +57,11 @@
                 font-weight: 400;
                 font-style: normal;
             }
+            .space-mono-regular {
+              font-family: "Space Mono", monospace;
+              font-weight: 400;
+              font-style: normal;
+            }
             .headline {
                 font-size: 90px;
             }
@@ -91,8 +97,8 @@
             .pfp {
                 background: url("https://github.com/rsuntk.png") no-repeat;
                 background-size: cover;
-                width: 64px;
-                height: 64px;
+                width: 128px;
+                height: 128px;
                 border-radius: 100%;
             }
             .wrapper-pfp {
@@ -100,6 +106,8 @@
             }
             .pfp-header {
                 padding: 14px;
+                align-items: center;
+                text-align: center;
             }
 
             .flex { display: flex; }
@@ -126,7 +134,7 @@
     <body>
         <div class="outer-box">
             <div class="about-box">
-                <div class="about-header pfp-header">
+                <div class="about-header pfp-header column">
                     <div class="pfp"></div>
                     <div class="wrapper-pfp">
                         <h3 class="ubuntu-h3">It's Rissu YAA!!</h3>
@@ -148,7 +156,7 @@
                         but i love developing things like website and android kernels.
                     </p>
                     <p class="ubuntu-p center-a flex" style="margin-top: 7px;">
-                        Also, moi<span class="moi"></span> lover
+                        Also, moi <span class="moi"></span> lover
                     </p>
                 </div>
             </div>
@@ -177,7 +185,7 @@
                                 <div class="label-icon-cnt flex column">
                                     <h3 class="ubuntu-h3">Samsung Galaxy A10s</h3>
                                     <p class="ubuntu-p">SM-A107F</p>
-                                    <p class="ubuntu-p" style="color: #646464">Seraphinedx</p>
+                                    <p class="space-mono-regular" style="color: #646464">seraphine/seraphinedx</p>
                                 </div>
                             </div>
                         </div>
@@ -189,7 +197,7 @@
                                 <div class="label-icon-cnt flex column">
                                     <h3 class="ubuntu-h3">Samsung Galaxy M10</h3>
                                     <p class="ubuntu-p">SM-M105G</p>
-                                    <p class="ubuntu-p" style="color: #646464">m10lte</p>
+                                    <p class="space-mono-regular" style="color: #646464">m10lte</p>
                                 </div>
                             </div>
                         </div>
